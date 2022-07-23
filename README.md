@@ -98,7 +98,7 @@ The Catalog of Go Examples
 
   - Facade
 
-  ![Facade](./img/adapter-mini.png)
+  ![Facade](./img/facade-mini.png)
 
   Provides a simplified interface to a library, a framework, or any other complex set of classes.
 
