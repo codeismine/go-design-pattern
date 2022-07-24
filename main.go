@@ -6,6 +6,7 @@ import (
 	"github.com/codeismine/go-design-pattern/patterns/creational/abstractfactory"
 	"github.com/codeismine/go-design-pattern/patterns/creational/builder"
 	"github.com/codeismine/go-design-pattern/patterns/creational/factorymethod"
+	"github.com/codeismine/go-design-pattern/patterns/creational/prototype"
 )
 
 func main() {
@@ -22,6 +23,11 @@ func main() {
 	// Factory Method
 	printStart("Factory Method")
 	factorymethod.BuilderInitializer()
+	printEnd()
+
+	// Prototype
+	printStart("Prototype")
+	prototype.PrototypeInitializer()
 	printEnd()
 }
 
