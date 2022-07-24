@@ -2,7 +2,7 @@
 
 The Catalog of Go Examples
 
-- Creational Patterns
+- Creational Patterns: These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
   - Abstract Factory
 
@@ -54,7 +54,7 @@ The Catalog of Go Examples
 
   [Code example](https://refactoring.guru/design-patterns/singleton/go/example#example-0)
 
-- Structural Patterns
+- Structural Patterns: These patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
 
   - Adapter
 
@@ -126,7 +126,7 @@ The Catalog of Go Examples
 
   [Code example](https://refactoring.guru/design-patterns/proxy/go/example#example-0)
 
-- Behavioral Patterns
+- Behavioral Patterns: These patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
   - Chain of Responsibility
 
