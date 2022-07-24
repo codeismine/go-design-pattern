@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/codeismine/go-design-pattern/patterns/creational/abstractfactory"
+)
 
 func main() {
-	fmt.Print("Hello World")
+	abstractfactory.AbstractFactoryInitializer()
 }
