@@ -7,6 +7,8 @@ import (
 	"github.com/codeismine/go-design-pattern/patterns/creational/builder"
 	"github.com/codeismine/go-design-pattern/patterns/creational/factorymethod"
 	"github.com/codeismine/go-design-pattern/patterns/creational/prototype"
+	// singleton1 "github.com/codeismine/go-design-pattern/patterns/creational/singleton/exampleone"
+	// singleton2 "github.com/codeismine/go-design-pattern/patterns/creational/singleton/exampletwo"
 )
 
 func main() {
@@ -29,6 +31,15 @@ func main() {
 	printStart("Prototype")
 	prototype.PrototypeInitializer()
 	printEnd()
+
+	// Singleton
+	// printStart("Singleton Ex1")
+	// singleton1.SingletonInitializer()
+	// printEnd()
+
+	// printStart("Singleton Ex2")
+	// singleton2.SingletonInitializer()
+	// printEnd()
 }
 
 func printStart(title string) {
