@@ -1,6 +1,8 @@
 # DESIGN PATTERNS in GO
 
-The Catalog of Go Examples
+![DESIGN PATTERNS in GO](./img/go.png)
+
+### The Catalog of Go Examples
 
 - Creational Patterns: These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
