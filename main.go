@@ -9,7 +9,8 @@ import (
 	// "github.com/codeismine/go-design-pattern/patterns/creational/prototype"
 	// singleton1 "github.com/codeismine/go-design-pattern/patterns/creational/singleton/exampleone"
 	// singleton2 "github.com/codeismine/go-design-pattern/patterns/creational/singleton/exampletwo"
-	"github.com/codeismine/go-design-pattern/patterns/structural/adapter"
+	// "github.com/codeismine/go-design-pattern/patterns/structural/adapter"
+	"github.com/codeismine/go-design-pattern/patterns/structural/bridge"
 )
 
 func main() {
@@ -42,8 +43,12 @@ func main() {
 	// singleton2.SingletonInitializer()
 	// printEnd()
 
-	printStart("Adapter")
-	adapter.AdapterInitializer()
+	// printStart("Adapter")
+	// adapter.AdapterInitializer()
+	// printEnd()
+
+	printStart("Bridge")
+	bridge.BridgeInitializer()
 	printEnd()
 }
 
