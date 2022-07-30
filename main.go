@@ -12,7 +12,8 @@ import (
 	// "github.com/codeismine/go-design-pattern/patterns/structural/adapter"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/bridge"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/composite"
-	"github.com/codeismine/go-design-pattern/patterns/structural/decorator"
+	// "github.com/codeismine/go-design-pattern/patterns/structural/decorator"
+	"github.com/codeismine/go-design-pattern/patterns/structural/facade"
 )
 
 func main() {
@@ -61,8 +62,13 @@ func main() {
 	// printEnd()
 
 	// Decorator
-	printStart("Decorator")
-	decorator.DecoratorInitializer()
+	// printStart("Decorator")
+	// decorator.DecoratorInitializer()
+	// printEnd()
+
+	// Facade
+	printStart("Facade")
+	facade.FacadeInitializer()
 	printEnd()
 }
 
