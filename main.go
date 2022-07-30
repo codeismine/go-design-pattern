@@ -14,7 +14,8 @@ import (
 	// "github.com/codeismine/go-design-pattern/patterns/structural/composite"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/decorator"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/facade"
-	"github.com/codeismine/go-design-pattern/patterns/structural/flyweight"
+	// "github.com/codeismine/go-design-pattern/patterns/structural/flyweight"
+	"github.com/codeismine/go-design-pattern/patterns/structural/proxy"
 )
 
 func main() {
@@ -73,8 +74,13 @@ func main() {
 	// printEnd()
 
 	// Flyweight
-	printStart("Flyweight")
-	flyweight.FlyweightInitializer()
+	// printStart("Flyweight")
+	// flyweight.FlyweightInitializer()
+	// printEnd()
+
+	// Proxy
+	printStart("Proxy")
+	proxy.ProxyInitializer()
 	printEnd()
 }
 
