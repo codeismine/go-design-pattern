@@ -11,7 +11,8 @@ import (
 	// singleton2 "github.com/codeismine/go-design-pattern/patterns/creational/singleton/exampletwo"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/adapter"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/bridge"
-	"github.com/codeismine/go-design-pattern/patterns/structural/composite"
+	// "github.com/codeismine/go-design-pattern/patterns/structural/composite"
+	"github.com/codeismine/go-design-pattern/patterns/structural/decorator"
 )
 
 func main() {
@@ -55,8 +56,13 @@ func main() {
 	// printEnd()
 
 	// Composite
-	printStart("Composite")
-	composite.CompositeInitializer()
+	// printStart("Composite")
+	// composite.CompositeInitializer()
+	// printEnd()
+
+	// Decorator
+	printStart("Decorator")
+	decorator.DecoratorInitializer()
 	printEnd()
 }
 
