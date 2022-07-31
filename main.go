@@ -15,7 +15,8 @@ import (
 	// "github.com/codeismine/go-design-pattern/patterns/structural/decorator"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/facade"
 	// "github.com/codeismine/go-design-pattern/patterns/structural/flyweight"
-	"github.com/codeismine/go-design-pattern/patterns/structural/proxy"
+	// "github.com/codeismine/go-design-pattern/patterns/structural/proxy"
+	"github.com/codeismine/go-design-pattern/patterns/behavioral/chainofresponsibility"
 )
 
 func main() {
@@ -79,8 +80,13 @@ func main() {
 	// printEnd()
 
 	// Proxy
-	printStart("Proxy")
-	proxy.ProxyInitializer()
+	// printStart("Proxy")
+	// proxy.ProxyInitializer()
+	// printEnd()
+
+	// Chain of Responsibility
+	printStart("Chain of Responsibility")
+	chainofresponsibility.ChainOfResponsibilityInitializer()
 	printEnd()
 }
 
