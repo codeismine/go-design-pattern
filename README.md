@@ -28,13 +28,13 @@
 
   ![Abstract Factory Problem](./img/abstract-factory/problem-en.png)
 
-  <p style="text-align: center; font-style: italic; font-size: 12px;">Product families and their variants.</p>
+  > Product families and their variants.
 
   You need a way to create individual furniture objects so that they match other objects of the same family. Customers get quite mad when they receive non-matching furniture.
 
   ![Abstract Factory Comic 1](./img/abstract-factory/abstract-factory-comic-1-en.png)
 
-  <p style="text-align: center; font-style: italic; font-size: 12px;">A Modern-style sofa doesn’t match Victorian-style chairs.</p>
+  > A Modern-style sofa doesn’t match Victorian-style chairs.
 
   Also, you don’t want to change existing code when adding new products or families of products to the program. Furniture vendors update their catalogs very often, and you wouldn’t want to change the core code each time it happens.
 
@@ -44,13 +44,13 @@
 
   ![Abstract Factory Solution 1](./img/abstract-factory/solution1.png)
 
-  <p style="text-align: center; font-style: italic; font-size: 12px;">All variants of the same object must be moved to a single class hierarchy.</p>
+  > All variants of the same object must be moved to a single class hierarchy.
 
   The next move is to declare the Abstract Factory—an interface with a list of creation methods for all products that are part of the product family (for example, `createChair`, `createSofa` and `createCoffeeTable`). These methods must return abstract product types represented by the interfaces we extracted previously: `Chair`, `Sofa`, `CoffeeTable` and so on.
 
   ![Abstract Factory Solution 2](./img/abstract-factory/solution2.png)
 
-  <p style="text-align: center; font-style: italic; font-size: 12px;">Each concrete factory corresponds to a specific product variant.</p>
+  > Each concrete factory corresponds to a specific product variant.
 
   Now, how about the product variants? For each variant of a product family, we create a separate factory class based on the `AbstractFactory` interface. A factory is a class that returns products of a particular kind. For example, the `ModernFurnitureFactory` can only create `ModernChair`, `ModernSofa` and `ModernCoffeeTable` objects.
 
@@ -58,7 +58,7 @@
 
   ![Abstract Factory Comic 2](./img/abstract-factory/abstract-factory-comic-2-en.png)
 
-  <p style="text-align: center; font-style: italic; font-size: 12px;">The client shouldn’t care about the concrete class of the factory it works with.</p>
+  > The client shouldn’t care about the concrete class of the factory it works with.
 
   Say the client wants a factory to produce a chair. The client doesn’t have to be aware of the factory’s class, nor does it matter what kind of chair it gets. Whether it’s a Modern model or a Victorian-style chair, the client must treat all chairs in the same manner, using the abstract `Chair` interface. With this approach, the only thing that the client knows about the chair is that it implements the `sitOn` method in some way. Also, whichever variant of the chair is returned, it’ll always match the type of sofa or coffee table produced by the same factory object.
 
